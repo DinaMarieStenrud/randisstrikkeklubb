@@ -21,7 +21,7 @@ function endreStørrelse(element) {
 
     if (element.classList.contains('enlarged')) {
         
-        img.style.width = "270px";
+        img.style.width = "300px";
         tekstElement.style.display = "none";
         element.classList.remove('enlarged');
     } else {

@@ -7,10 +7,11 @@
 }
 
 body {
-    background-color: #ecdfdf;
-
+    background-color: #462246;
 }
 
+
+/* navbar */
 
 #navbar {
     height: 70px;
@@ -43,13 +44,10 @@ body {
 li a {
     text-decoration: none;
     font-size: 20px;
-    color: rgb(248, 245, 245);
+    color:white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.aktiv_side_sarah {
-    font-weight: 700;
-}
 
 /* Dropdown styles */
 .dropdown {
@@ -59,7 +57,7 @@ li a {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:#6d2f6b;
+    background-color:#2a1229;
     border: 1px solid black;
 
 }
@@ -81,134 +79,185 @@ li a {
 
 
 main {
-    display: flex;
+ 
     flex-wrap: wrap;
-    align-content: space-around;
-    margin-top: 80px;
-}
-.divstil {
-    margin: 25px;
-    padding: 20px;
-    border-radius: 25px;
-    background-color: #FFEBCD;
+    margin-top: 150px;
 }
 
 
-.boks {
-    height: auto;
-    width: 100%;
-    position: relative;
+
+/* hjem-siden*/
+
+.intro-container {
     display: flex;
-    border: 1px solid red
+    align-items:center; 
+    margin: 25px;
+    padding: 2px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+
+
     
 }
 
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
-.flex-row {
-    display: flex;
-    flex-direction: row;
+
+.tekst {
+    color: white;
+    line-height: 2.5;
+    font-weight: 500;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-.flex-1 {
-    flex: 1;
-}
+#randi-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.bildeDiv{
-    position: relative;
-    border: 1px solid blue;
+  
 }
 
 #randibildet {
-    width: 100%;
+    width: 50%;
+    border:5px;
+    border-color:#f994e6;
+    border-style:solid;
+    border-radius: 50%;
+   
 }
+
+
+
+
+/* oppskriftsiden */
+
+#oppskrift-boks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+   
+
+}
+
+#genser {
+    width: 300px;
+}
+
+#genser-tekst-boks {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    border-color: #fcf7fc;
+    border-style: dotted;
+
+}
+
+#genser-boks {
+    display: flex;
+    justify-content: right;
+    width: 1500px;
+
+
+
+}
+
+
+
+
+/* bildesiden */
+
 p {
     padding: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    .boks {
-        display: flex;
-        flex-direction: column;
-    }
-    #fjern {
-        display: none;
-    }
+
+
+#boksoverskrift1 a {
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Påmeldingsside */
-
-.h_sarah {
-    margin-left: 30px;
-    font-size: 20px;
-    margin-top: 20px;
+#boksoverskrift1 a:hover {
+    text-decoration: underline;
 }
 
-#tomrom_sarah {
-    margin-top: 90px;
-}
-  
-.paameldingssiden_sarah{
-    box-sizing: border-box;
-}
-
-.venstresiden_sarah{
-    float: left;
-    width: 60%;
-}
-
-.høyresiden_sarah{
-    float: left;
-    width: 39%;
-}
-
-.paameldingssiden_sarah::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#box1_sarah, #box3_sarah {
+#gallery {
+    margin: auto;
     text-align: center;
-    font-size: 20px;
-    margin: 25px;
-    padding: 20px;
-    border-radius: 25px;
-    background-color: #FFEBCD;
 }
 
-#box2_sarah {
-    font-size: 20px;
-    margin: 25px;
-    padding: 20px;
-    border-radius: 25px;
-    background-color: #FFEBCD;
+#gallery ul {
+    list-style: none;
 }
 
-#box4_sarah {
+
+#gallery ul li {
+    float: none;
+    display: inline-block;
     text-align: center;
-    background-color: #FFEBCD;
+}
+
+#gallery ul li img {
+    width: 300px;
     border-radius: 25px;
-    margin: 25px;
     padding: 20px;
 }
 
-.skjema_sarah{
-    border-spacing: 30px;: 20px;
+#gallery ul li img:hover {
+    transform: scale(1);
+    transition: 0.2s;
 }
 
-.bilder_sarah {
-    width: 80%;
-    border-radius: 10%;
+
+img:hover {
+    cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
-    .venstresiden_sarah, .høyresiden_sarah {
-        width: 100%;
-    }
+
+
+
+#rad {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-70%);
+    margin-top: 5%;
 }
+
+#rad1, #rad2, #rad3 {
+    margin-right: 10px;
+}
+
+
+
+/* til hit Dina */
+
+
+.image-container.active img {
+    transform: scale(1);
+}
+
+
+.bildebeskrivelse {
+    display: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.image-container.active .bildebeskrivelse {
+    display: block;
+}
+
+
 
 
 
